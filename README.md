@@ -57,11 +57,14 @@ And you will see something like this:
 
 Then, you will need to enable the log agent.
 
-Go to `/etc/datadog-agent/datadog.yaml`. 
+Go to `/etc/datadog-agent/datadog.yaml` and enable the logs:
 
+```
+logs_enabled: true 
+```
 Uncomment them and restart the agent. 
 
-
+Reference: https://www.devopsschool.com/blog/datadog-tutorials-log-collection-process-configuration/
 
 Agent will then collect these logs.
 
